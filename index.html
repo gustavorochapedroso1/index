@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylle.css" media="screen">
+    <title>PEDIDOS</title>
+</head>
+
+<body>
+<strong>
+    <div>
+        <h1 id="titulo">Pedidos</h1>
+        <p id="subtitulo">Preencha todos os campos!</p>
+        <br>
+    </div>
+
+    <form action="https://formsubmit.co/tornadobrpt@gmail.com" method="POST">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html"]>
+        <input type="hidden" name="_captcha" value="false">
+        <fieldset class="grupo">
+            <div class="campo">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" size="40" name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div class="campo">
+                <label for="endereço"> Endereço para entrega:</label>
+                <input type="text" name="endereço" id="endereço" required>
+                <div class="campo">
+                    <label for="cidade">Cidade:</labe>
+                        <select id="cidades">
+                            <option selected disabled value="">Selecione</option>
+                            <option>Cuiabá</option>
+                            <option>V.Grande</option>
+                        </select>
+                </div>
+                <div class="campo">
+                    <label for="bairro">Bairro:</label>
+                    <input type="text" name="bairro" id="bairro" required>
+                </div>
+                <div class="campo">
+                    <label for="numero">Numero:</label>
+                    <input type="text" name="numero" id="numero" required>
+                </div>
+                <div class="campo">
+                    <label for="numero">Observações:</label>
+                    <input type="text" name="observaçoes" id="Observaçoes" required>
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <div class="campo">
+                <p>Faça seu pedido abaixo, preencher com a quantidade:</p>
+                <label for="frango"> Frango limpo: R$ 40,00 un</label>
+                <input type="number" name="frango" id="frango"><br>
+                <label for="sujo">Frango Sujo: R$ 30,00 un</label>
+                <input type="number" name="sujo" id="sujo"><br>
+                <label for="salame">Salame Defumado: R$ 25,00 un</label>
+                <input type="number" name="salame" id="salame"><br>
+                <label for="ovos">Cartela de ovos: R$ 23,00 un</label>
+                <input type="number" name="ovos" id="ovos">
+            </div>
+        </fieldset>
+        <button type="submit" class="botao">Enviar!</button>
+
+    </form>
+
+</strong>
+</body>
+
+</html>
